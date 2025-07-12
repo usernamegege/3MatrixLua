@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Lua
+*.lua.bak
+luac.out
+
+# LuaJIT
+*.so
+*.dll
+*.dylib
+
+# Build artifacts
+build/
+dist/
+*.o
+*.a
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test_*.lua
+debug_*.lua
+
+# Temporary files
+tmp/
+temp/
+*.tmp
