@@ -27,6 +27,7 @@ Because Lua deserves a proper 3D framework! While other languages have Three.js,
 - ✅ Mesh generation (triangles, quads, cubes)
 - ✅ OBJ model loading
 - ✅ Window management via GLFW
+- ✅ Built-in collision detection (AABB, Sphere)
 - ✅ Cross-platform (macOS, Linux, Windows)
 - 🚧 FBX model loading (coming soon)
 - 🚧 Physics integration (coming soon)
@@ -98,6 +99,7 @@ Check out the `examples/` folder:
 - 🎮 `cube_collector_game.lua` - Simple game demo
 - 🎨 `mixed_2d_3d_demo.lua` - 2D UI + 3D scene
 - 🌟 `test_app.lua` - Interactive scene showcase
+- 💥 `collision_demo.lua` - Collision detection demo
 
 ## 📖 API Documentation
 
@@ -194,6 +196,32 @@ mesh:draw()
 -- Load OBJ model
 local model = m3d.ObjLoader.load("path/to/model.obj")
 model:draw()
+```
+
+### Collision Detection
+
+```lua
+-- AABB (Box) collision
+local box1 = m3d.collision.Box.new(x, y, z, width, height, depth)
+local box2 = m3d.collision.Box.new(x2, y2, z2, w2, h2, d2)
+if box1:intersects(box2) then
+    -- Collision detected!
+end
+
+-- Sphere collision
+local sphere = m3d.collision.Sphere.new(x, y, z, radius)
+if sphere:intersects(box1) then
+    -- Sphere hit box!
+end
+
+-- Simple collision check functions
+if m3d.collision.checkAABB3D(x1, y1, z1, w1, h1, d1, x2, y2, z2, w2, h2, d2) then
+    -- Boxes collide
+end
+
+if m3d.collision.checkSphere3D(x1, y1, z1, r1, x2, y2, z2, r2) then
+    -- Spheres collide
+end
 ```
 
 ## 🎮 Complete Game Example

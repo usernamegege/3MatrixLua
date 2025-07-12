@@ -113,6 +113,7 @@ matrix3d.math = require("matrix3d.math")
 matrix3d.Shader = require("matrix3d.shader")
 matrix3d.Mesh = require("matrix3d.mesh")
 matrix3d.ObjLoader = require("matrix3d.obj_loader")
+matrix3d.collision = require("matrix3d.collision")
 
 -- Initialize GLFW
 local initialized = false
