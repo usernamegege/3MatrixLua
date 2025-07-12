@@ -28,6 +28,8 @@ ffi.cdef[[
     void glfwWindowHint(int hint, int value);
     void glfwGetFramebufferSize(GLFWwindow* window, int* width, int* height);
     void glfwSwapInterval(int interval);
+    int glfwGetKey(GLFWwindow* window, int key);
+    void glfwSetWindowTitle(GLFWwindow* window, const char* title);
     
     // OpenGL functions
     void glClearColor(float red, float green, float blue, float alpha);
