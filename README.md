@@ -6,6 +6,8 @@ A pure Lua 3D/2D graphics framework that actually works! No C compilation, no bu
 ![LuaJIT](https://img.shields.io/badge/LuaJIT-2.1-blue.svg)
 ![OpenGL](https://img.shields.io/badge/OpenGL-3.3-green.svg)
 
+![3D Cube Demo](Cube%20Made%20with%203Matrix.png)
+
 ## 🤔 Why 3MatrixLua?
 
 Because Lua deserves a proper 3D framework! While other languages have Three.js, Unity, or Godot, Lua developers have been stuck with... not much. Until now!
